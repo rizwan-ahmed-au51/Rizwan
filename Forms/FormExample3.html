@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FormExample3</title>
+		<style>
+			*{
+				padding:3px;
+				margin:0px;
+				box-sizing: border-box;
+			}
+			body{
+				background-color: cyan;
+			}
+			table{
+				width: 500px;
+				margin: 0px; auto;
+			}
+			table, tr,th,td{
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+			.radioInput{
+				width: 40px;
+			}
+			form {
+				
+				padding:50px;
+				margin: 5px;
+			}
+			form input {
+				width: 50%;
+				margin: 5px 5px;
+				padding: 3px;
+				box-sizing: border-box;
+				border-radius: 5px;
+				border: none;
+			}
+			form button{
+				padding:3px 7px;
+				border-radius:5px;
+				margin-top:5px;
+			}
+			form .formbtn {
+				display: flex;
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table>
+				<tr>
+					<th colspan="2">
+						<h1>Student Registration Form</h1>
+					</th>
+				</tr>
+				<tr>
+		 			<td><label>Name</label></td>
+					<td><input type="text"></td>
+				</tr>
+				
+				<tr>
+					<td><label>Father Name</label></td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td><label>Postal Address</label></td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td><label>Personal Address</label></td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td><label>Sex</label></td>
+					<td><input type="radio" class="radioInput"><span>Male</span>
+					<input type="radio" class="radioInput"><span>Female</span></td>
+				</tr>
+
+				<tr>
+					<td><label>City</label></td>
+					<td><select>
+						<option>Select city</option>
+						<option>Hyderabad</option>
+						<option>Bengaluru</option>
+						<option>Aler</option>
+						<option>jangaon</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td><label>Courses</label></td>
+					<td><select>
+						<option>Select Course</opion>
+						<option>English</option>
+						<option>Physics</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td><label>State</label></td>
+					<td><select>
+						<option>select state</option>
+						<option>Assam</option>
+						<option>Bihar</option>
+						<option>chandigarh</option>
+						<option>Telangana</option>
+					</Select></td>
+				</tr>
+
+				<tr>
+					<td><label>Pin Code</label></td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td><label>Email Id</label></td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td><label>DOB</label></td>
+					<td><input type="text"></td>
+				</tr>
+
+				<tr>
+					<td><label>Mobile No</label></td>
+					<td><input type="text"><br></td>
+				</tr>
+			
+				<tr>
+					<td><button>Reset</button></td>
+					<td><button>Submit Form</button></td>	
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,1129 @@
+* {
+  font-family: montserrat;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #000;
+
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #000;
+}
+
+.carousel-caption a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff7979;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #000;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.carousel-caption a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.expert {
+  background-color: #3dced6;
+}
+
+.icon {
+  font-size: 80px;
+  color: #fff;
+}
+
+.icon-matter {
+  color: #fff;
+}
+
+.courses {
+  margin-top: 100px;
+}
+
+.courses h3,
+.courses p {
+  font-weight: bold;
+}
+
+.profile-area {
+  padding: 80px 0;
+}
+
+.card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img1 img {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.img1 img:hover {
+  opacity: 0.7;
+  transition: 0.7s;
+
+}
+
+.img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-top: 160px;
+}
+
+.card:hover .img2 img {
+  border-color: darkcyan;
+  transition: 1s;
+}
+
+.main-text {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-text h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.main-text p {
+  font-size: 16px;
+  padding: 0 35px;
+}
+
+.socials {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #EDEDED;
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.socials1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: #3dced6;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #EDEDED;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.card:hover .socials1 {
+  border-top-color: darkcyan;
+  transition: 00.7s;
+}
+
+.card:hover .socials {
+  border-top-color: darkcyan;
+  transition: 00.7s;
+}
+
+.socials i {
+  font-size: 20px;
+  color: darkcyan;
+  padding: 0 10px;
+}
+
+.join img {
+  margin-bottom: -30px;
+}
+
+.join .for {
+  text-transform: uppercase;
+  background: #ff7979;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+
+.join .for a {
+  color: #000;
+  text-decoration: none;
+}
+
+.curriculum {
+  background-image: url(./assets/images/bg1.jpg);
+}
+
+.curriculum h3 {
+  color: #fff;
+  font-weight: bold;
+  padding: 100px 0 ;
+}
+
+.curriculum p {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 70px;
+  background-color: #fff;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+
+.curriculum span {
+  margin-left: 20px;
+  margin-top: -15px;
+}
+
+.curriculum p:hover {
+  border-style: solid;
+  border-width: 0px 10px 0px 10px;
+  border-color: #64E5B0;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+}
+
+.curriculum .margin p {
+  margin-bottom: -50px !important;
+}
+
+.new-courses {
+  margin-top: 70px;
+}
+
+.certificate {
+  margin-top: 70px;
+}
+
+.img4 img {
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 170px;
+}
+
+.img3 img {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.main-text1 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-text1 p {
+  font-size: 16px;
+  font-weight: lighter !important;
+  padding: 0 35px;
+}
+
+
+
+.university {
+  margin: 60px;
+}
+
+.mail {
+  background-color: #F6F6F6;
+  padding: 50px;
+}
+
+.mail p {
+  background-image: url(./assets/images/bg-mail.webp);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding: 45px;
+  color: #aba9a9;
+}
+
+.mail1 {
+  padding: 45px;
+}
+
+.mail input {
+  padding: 9px 16px !important;
+  max-width: 580px !important;
+  background: #fff url(./assets/images/msg.png) no-repeat center right 20px;
+  color: #b4b4b4;
+  font-size: 16px;
+  border-radius: 6px 0 0 6px;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 5%);
+}
+
+.mail button {
+  background: #ff7979;
+  color: #fff;
+  border-color: #ff7979;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.mail button:hover {
+  transform: scale(0.97);
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.mail .mail1 {
+  text-align: right;
+}
+
+.mail1 form {
+  display: flex;
+}
+
+.contact {
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.20);
+  /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+  margin-top: -50px;
+  /* margin-bottom: 0px; */
+  padding: 50px 0px 40px 0px;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.contact .line {
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+  border-color: #09090961;
+}
+
+.contact .line1 {
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+  border-color: #09090961;
+}
+
+.contact i {
+  color: #ff7979;
+  font-size: 25px;
+}
+
+.footer {
+  background-color: #3dced6;
+  position: relative;
+  padding: 160px 0 20px 0;
+  margin-top: -130px;
+}
+
+.footer h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  text-shadow: #000 2px 2px 10px;
+  padding: 80px 0;
+}
+
+.footer a {
+  font-size: 25px;
+  color: #000;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .courses {
+    margin-top: 70px;
+  }
+
+  .courses h3,
+  .courses p {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .profile-area {
+    padding: 60px 0;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .img1 img {
+    height: 180px;
+  }
+
+
+  .img2 img {
+    margin-top: 150px;
+  }
+
+
+  .main-text {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .main-text h2 {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 0 15px;
+  }
+
+  .main-text p {
+    font-size: 13px;
+  }
+
+  .socials i {
+    font-size: 17px;
+    padding: 0 5px;
+  }
+
+  .join .limit {
+    margin-left: 20px;
+  }
+
+  .join .limit p {
+    font-size: 12px;
+  }
+
+  .join .for {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+
+  .certificate {
+    margin-top: 30px;
+  }
+
+  .main-text1 {
+    padding: 20px 0;
+
+  }
+
+  .main-text1 p {
+    font-size: 14px;
+    padding: 0 25px;
+  }
+
+  .university {
+    margin: 40px;
+  }
+
+  .mail {
+    padding: 30px;
+  }
+
+  .mail p {
+    padding: 35px;
+
+  }
+
+  .mail1 {
+    padding: 35px;
+  }
+
+  .mail input {
+    font-size: 15px;
+  }
+
+  .mail button {
+    font-size: 15px;
+
+  }
+
+
+  .contact {
+    margin-top: -80px;
+  }
+
+  .contact i {
+    color: #ff7979;
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .courses {
+    margin-top: 60px;
+  }
+
+  .courses p {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .profile-area {
+    padding: 50px 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .main-text h2 {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 0 15px;
+  }
+
+  .main-text p {
+    font-size: 12px;
+  }
+
+  .socials i {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  .socials1 {
+    font-size: 12px;
+  }
+
+  .join img {
+    height: 150px;
+    margin-bottom: -250px;
+  }
+
+  .card h6 {
+    font-size: 12px;
+  }
+
+  .curriculum h3 {
+    text-align: center;
+
+  }
+
+  .curriculum p {
+    font-size: 13px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .main-text h2 {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 0 15px;
+  }
+
+  .main-text p {
+    font-size: 10px;
+  }
+
+  .new-courses {
+    margin-top: 50px;
+  }
+
+  .certificate {
+    margin-top: 30px;
+  }
+
+  .mail {
+    padding: 30px;
+  }
+
+  .mail p {
+    font-size: 15px;
+    padding: 70px 0;
+  }
+
+  .mail1 {
+    padding: 30px;
+  }
+
+  .mail1 form {
+    display: flex;
+    padding: 70px 0;
+  }
+
+  .mail input {
+    font-size: 13px;
+  }
+
+  .mail button {
+    font-size: 13px;
+  }
+
+  .contact {
+    margin-top: -100px;
+  }
+
+  .contact i {
+    font-size: 20px;
+  }
+
+  .contact p {
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 180px 0 20px 0;
+    margin-top: -150px;
+  }
+
+  .footer h1 {
+    font-size: 50px;
+    padding: 90px 0;
+  }
+
+  .footer a {
+    font-size: 25px;
+    color: #000;
+  }
+
+  .footer .menu h5 {
+    font-size: 17px;
+  }
+
+  .footer .menu p {
+    font-size: 15px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .carousel-caption h5 {
+    font-size: 25px;
+    margin-top: 20px;
+
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .carousel-caption a {
+    padding: 6px 20px;
+    margin-top: 15px;
+  }
+
+  .carousel-caption a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .icon {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .icon-matter h5 {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .icon-matter p {
+    font-size: 10px;
+  }
+
+  .courses {
+    margin-top: 40px;
+  }
+
+  .courses p {
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .profile-area {
+    padding: 50px 0;
+  }
+
+  .card {
+    margin-bottom: 25px;
+  }
+
+  .img1 img {
+    height: 150px;
+  }
+
+
+  .img2 img {
+    margin-top: 120px;
+  }
+
+
+  .main-text {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .main-text h2 {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 0 15px;
+  }
+
+  .main-text p {
+    font-size: 10px;
+  }
+
+  .socials i {
+    font-size: 15px;
+  }
+
+  .join img {
+    display: none;
+  }
+
+  .join .for {
+    padding: 5px 20px;
+    margin-top: 20px;
+  }
+
+  .limit {
+    margin-top: -80px;
+  }
+
+
+  .curriculum {
+    background-color: #3dced6;
+    background-image: none;
+  }
+
+  .curriculum h3 {
+    padding: 10px 0 ;
+    text-align: center;
+  }
+
+  .curriculum p {
+    font-size: 12px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .margin .margin1 {
+    padding: 0 0 100px 0;
+  }
+
+  .new-courses {
+    margin-top: 40px;
+  }
+
+  .certificate {
+    margin-top: 20px;
+  }
+
+  .img4 img {
+    margin-top: 120px;
+  }
+
+  .img3 img {
+    height: 150px;
+  }
+
+  .main-text1 {
+    padding: 15px 0;
+  }
+
+  .main-text1 p {
+    font-size: 15px;
+  }
+
+  .university {
+    margin: 20px;
+  }
+
+  .mail {
+    background-color: #F6F6F6;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .mail p {
+    background-image: none;
+    padding: 50px 0 0 0;
+    font-size: 12px;
+  }
+
+  .mail1 {
+    padding: 0 100px 100px 100px;
+
+  }
+
+  .mail input {
+    max-width: 80px;
+  }
+
+  .mail button {
+    align-items: right;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .contact {
+    margin-top: -100px;
+    padding: 40px 0px 30px 0px;
+  }
+
+  .contact .line {
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #09090961;
+  }
+
+  .contact .line1 {
+    border-style: none;
+
+  }
+
+  .contact i {
+    font-size: 20px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+
+  .footer {
+    margin-top: -105px;
+  }
+
+  .footer h1 {
+    font-size: 40px;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer h5 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+
+  .footer a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:575px) {
+  .curriculum {
+    background-color: #3dced6;
+  }
+
+  .curriculum h3 {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .curriculum p {
+    font-size: 13px;
+    padding: 5px 5px 5px 5px;
+  }
+  
+
+  .join .for {
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .new-courses {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .new-courses p {
+    font-size: 12px;
+  }
+
+  .certificate {
+    margin-top: 10px;
+  }
+
+  .certificate p{
+    font-size: 12px;
+  }
+
+  .mail {
+    background-color: #F6F6F6;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .mail p {
+    background-image: none;
+    padding: 50px 0 0 0;
+    font-size: 12px;
+  }
+
+  .mail1 {
+    padding: 0 10px 150px 150px;
+
+  }
+
+  .contact {
+    margin-top: -150px;
+    padding: 15px 0px 10px 0px;
+  }
+
+  .contact .line {
+    border-style: none;
+  }
+
+  .footer {
+    margin-top: -105px;
+  }
+
+  .footer h1 {
+    font-size: 35px;
+    padding: 10px 0;
+  }
+
+  .footer p {
+    font-size: 5px;
+  }
+
+  .footer h5 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+
+  .footer a {
+    font-size: 20px;
+  }
+
+
+
+}
+
+@media only screen and (max-width:426px) {
+  .carousel-caption h5 {
+    font-size: 15px;
+    color: #ff7979;
+  }
+
+  .carousel-caption a {
+    font-size: 8px;
+  }
+
+  .carousel-caption p {
+    display: block;
+  }
+
+  .icon {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .courses {
+    margin-top: 15px;
+  }
+
+  .courses h3,
+  .courses p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .profile-area {
+    padding: 30px 0;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .img1 img {
+    height: 150px;
+  }
+
+
+  .curriculum h3 {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .curriculum p {
+    font-size: 12px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .new-courses {
+    margin-top: 40px;
+  }
+
+  .certificate {
+    margin-top: 20px;
+  }
+
+  .img4 img {
+    margin-top: 120px;
+  }
+
+  .img3 img {
+    height: 150px;
+  }
+
+  .main-text1 {
+    padding: 15px 0;
+  }
+
+  .main-text1 p {
+    font-size: 15px;
+  }
+
+  .university {
+    margin: 20px;
+  }
+
+  .mail {
+    background-color: #F6F6F6;
+    padding: 10px;
+  }
+
+  .mail p {
+    background-image: none;
+    padding: 15px;
+    color: #aba9a9;
+    font-size: 12px;
+  }
+
+  .mail1 {
+    padding: 25px;
+  }
+
+  .mail input {
+    max-width: 80px;
+    background-image: none;
+    display: contents;
+  }
+
+  .mail button {
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-left: auto;
+    margin-bottom: 100px;
+  }
+
+  .contact {
+    margin-top: -150px;
+    padding: 40px 0px 30px 0px;
+  }
+
+  .contact i {
+    font-size: 20px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+
+  .footer {
+    margin-top: -175px;
+  }
+
+  .footer h1 {
+    font-size: 40px;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer h5 {
+    font-size: 15px;
+  }
+
+  .footer a {
+    font-size: 20px;
+  }
+
+
+}
+
+@media only screen and (max-width:320px) {
+  .mail {
+    background-color: #F6F6F6;
+    padding: 10px 0;
+  }
+
+  .mail p {
+    padding: 15px 0;
+    font-size: 12px;
+  }
+
+  .mail1 {
+    padding: 10px;
+  }
+
+  .mail button {
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+
+  .contact {
+    margin-top: -150px;
+    padding: 15px 0px 10px 0px;
+  }
+
+  .contact i {
+    font-size: 15px;
+  }
+
+  .contact p {
+    font-size: 10px;
+  }
+
+  .footer {
+    margin-top: -175px;
+  }
+
+  .footer h1 {
+    font-size: 30px;
+  }
+
+  .footer p {
+    font-size: 5px;
+  }
+
+  .footer h5 {
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .footer a {
+    font-size: 20px;
+  }
+
+}

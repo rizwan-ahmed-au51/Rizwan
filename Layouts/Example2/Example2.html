@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar img {
+            height: 70px;
+            width: 90px;
+        }
+
+        .navbar ul {
+            display: flex;
+            float: right;
+            font-size: 12px;
+        }
+
+        .navbar ul li {
+            color: #fde402;
+            padding: 25px 15px 0px 0px;
+        }
+
+        .navbar ul li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 0px 7px;
+        }
+
+        .navbar ul li a:hover {
+            color: #F9AB2D;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0%;
+            z-index: 1;
+            width: 100%;
+            height: 70px;
+            background-color: #1f8da73d;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .banner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: #063540a2;
+            color: #fff;
+            height: 195px;
+            width: 100%;
+            font-family: system-ui;
+            font-size: 45px;
+        }
+
+        .banner .buy a {
+            position: absolute;
+            top: 53%;
+            left: 44%;
+            background-color: #F9AB2D;
+            font-family: fantasy;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 12px;
+            margin-top: 15px;
+            color: #000;
+        }
+
+        .banner .buy a:hover {
+            color: #fff;
+        }
+
+        .icons {
+            display: flex;
+            padding: 30px 190px 0px 190px;
+        }
+
+        .icons .A,
+        .icons .B,
+        .icons .C,
+        .icons .D {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .icons .fa,
+        .icons .fa,
+        .icons .fa,
+        .icons .fa {
+            background-color: #f3db06;
+            color: #fff;
+            font-size: 30px;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 50%;
+        }
+
+        .icons .fa:hover,
+        .icons .fa:hover,
+        .icons .fa:hover,
+        .icons .fa:hover {
+            background-color: #fff;
+            color: #f3db06;
+        }
+
+        .icons h5 {
+            font-family: system-ui;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .icons p {
+            font-size: 10px;
+        }
+
+        .how-we-do {
+            background-image: linear-gradient(#000000b6, #000000b7), url(../Example2/pic2.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 15px 87px 23px 117px;
+        }
+
+        .how-we-do h3 {
+            text-align: center;
+            color: #f3db06;
+            font-family: system-ui;
+
+        }
+
+        .our-work {
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            padding: 0px 80px 0px 80px;
+        }
+
+        .our-work .fa {
+            text-align: center;
+            font-size: 35px;
+            color: #f3db06;
+        }
+
+        .our-work h5 {
+            margin-bottom: 5%;
+            margin-top: 5%;
+            color: #fff;
+            font-family: system-ui;
+        }
+
+        .our-work p {
+            color: #fff;
+            text-align: center;
+            font-size: 9px;
+            font-family: sans-serif;
+        }
+
+        .list ul {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .list ul li {
+            list-style-type: none;
+            color: #000;
+            padding: 18px 0px 15px 25px;
+        }
+
+        .list ul li:hover {
+            color: #f3db06;
+        }
+
+        .matter {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .matter a {
+            background-color: #F9AB2D;
+            font-family: fantasy;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 12px;
+            color: #000;
+        }
+
+        .matter h3 {
+            margin-bottom: 1%;
+            font-family: sans-serif;
+        }
+
+        .numbers {
+            background-image: url(../Example2/pic3.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 3%;
+            padding: 15px;
+        }
+
+        .numbers h3 {
+            text-align: center;
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        .numbers p {
+            text-align: center;
+            color: #fff;
+            font-family: sans-serif;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            font-size: 10px;
+        }
+
+        .h2 {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 640px;
+            margin-left: 26%;
+
+        }
+
+        .h2 h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .h2 h6 {
+            text-align: center;
+            color: #f3db06;
+            font-size: 10px;
+        }
+
+        .above,
+        .below {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 900px;
+            margin-left: 16%;
+            margin-top: 4%;
+        }
+
+        .above .left,
+        .above .right,
+        .below .left,
+        .below .right {
+            display: flex;
+        }
+
+        .left h6,
+        .right h6 {
+            font-family: sans-serif;
+            margin-bottom: 1%;
+        }
+
+        .left p,
+        .right p {
+            font-size: 10px;
+        }
+
+        .pictures {
+            display: flex;
+            margin-left: 16%;
+        }
+
+        .pictures h5 {
+            color: #f3db06;
+            font-size: 8px;
+            text-align: center;
+        }
+
+        .pictures h6 {
+            color: rgb(150, 147, 147);
+            font-size: 10px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .skills {
+            background-image: linear-gradient(#000000b6, #000000b7), url(../Example2/pic4.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        .skills h3 {
+            text-align: center;
+            color: #fff;
+
+        }
+
+        .skills p {
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            font-size: 10px;
+            color: #fff;
+        }
+
+        .skills1 {
+            display: flex;
+            color: #f3db06;
+            justify-content: space-between;
+            text-align: center;
+            max-width: 650px;
+            margin-left: 25%;
+        }
+
+        .skills1 h2 {
+            border: 2px solid #f3db06;
+            border-radius: 50%;
+            padding: 20px 20px 20px 20px;
+            margin-bottom: 15%;
+        }
+
+        .skills1 h6 {
+            margin-bottom: 15%;
+        }
+
+        .quote {
+            background-image: linear-gradient(#000000b6, #000000b7), url(../Example2/pic5.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 30px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+
+        .contact-us {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+
+        .contact-us .fa {
+            color: #f3db06;
+            margin-left: 43%;
+        }
+
+        .contact-us h6 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .contact-us p {
+            text-align: center;
+            font-size: 10px;
+            margin-bottom: 25px;
+        }
+
+        .message {
+            background-image: linear-gradient(#000000b6, #000000b7), url(../Example2/footer.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 30px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+
+        .message a {
+            background-color: #f3db06;
+            font-family: fantasy;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 12px;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner" style="position: relative;">
+        <img src="./pic1.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="navbar">
+            <div>
+                <img src="./logo.png">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h1>BRANDING HAVE ANOTHER <br>DEFINITION</h1>
+        </div>
+        <div class="buy">
+            <a href="#" style="text-decoration:none">BUY THIS THEME</a>
+        </div>
+        <i class="fa fa-angle-double-down" aria-hidden="true"
+            style="position: absolute; top: 94.5%; margin-left: 49%;  color: #fff; background-color: #f9AB2D; padding: 12px;"></i>
+    </div>
+    <h6 style="text-align: center; margin-bottom: 0.5%; margin-top: 1%;">OUR SERVICES</h6>
+    <h5 style="text-align: center; font-family: fantasy; margin-bottom: 1%;">WHAT WE LOVE TO DO</h5>
+    <p style="font-size: 11px; text-align:center; font-family: system-ui;">Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Minus labore, soluta vitae<br>
+        quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+        dignissimos cupiditate, nobis odit? Soluta, odio amet.
+    </p>
+    <div class="icons">
+        <div class="A">
+            <i class="fa fa-css3" aria-hidden="true"></i>
+            <h5>WEB DESIGN</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.<br>Temporibus fuga dolore delectus! Delectus, autem.
+            </p>
+        </div>
+        <div class="B">
+            <i class="fa fa-pencil-square" aria-hidden="true"></i>
+            <h5>GRAPHIC DESIGN</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.<br>Temporibus fuga dolore delectus! Delectus, autem.
+            </p>
+        </div>
+        <div class="C">
+            <i class="fa fa-camera" aria-hidden="true"></i>
+            <h5>PHOTOGRAPHY</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.<br>Temporibus fuga dolore delectus! Delectus, autem.
+            </p>
+        </div>
+        <div class="D">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <h5>DEVELOPING</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.<br>Temporibus fuga dolore delectus! Delectus, autem.
+            </p>
+        </div>
+    </div>
+    <div class="how-we-do">
+        <div>
+            <h3>HOW WE DO IT</h3>
+            <p style=" text-align: center;
+            margin-top: 6px;
+            margin-bottom: 35px;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 10px;">Lorem ipsum dolor sit amet consectetur.Temporibus fuga dolore delectus! Delectus, autem.
+            </p>
+        </div>
+        <div class="our-work">
+            <div class="analyse">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <h5>ANALYSE</h5>
+                <p>Lorem ipsum dolor sit amet.<br>
+                    Temporibus fuga dolore delectus! Delectus, autem.</p>
+            </div>
+            <div class="preparing">
+                <i class="fa fa-print" aria-hidden="true"></i>
+                <h5>PREPARING</h5>
+
+                <p>Lorem ipsum dolor sit amet.<br>
+                    Temporibus fuga dolore delectus! Delectus, autem.</p>
+
+            </div>
+            <div class="working">
+                <i class="fa fa-gavel" aria-hidden="true"></i>
+                <h5>WORKING</h5>
+
+                <p>Lorem ipsum dolor sit amet.<br>
+                    Temporibus fuga dolore delectus! Delectus, autem.</p>
+
+            </div>
+            <div class="finalyse">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <h5>FINALYSE</h5>
+
+                <p>Lorem ipsum dolor sit amet.<br>
+                    Temporibus fuga dolore delectus! Delectus, autem.</p>
+
+            </div>
+            <div class="testing">
+                <i class="fa fa-spinner" aria-hidden="true"></i>
+                <h5>TESTING</h5>
+
+                <p>Lorem ipsum dolor sit amet.<br>
+                    Temporibus fuga dolore delectus! Delectus, autem.</p>
+
+            </div>
+            <div class="deliver">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <h5>DELIVER</h5>
+
+                <p>Lorem ipsum dolor sit amet.<br>
+                    Temporibus fuga dolore delectus! Delectus, autem.</p>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <h6 style="text-align: center; margin-bottom: 0.5%; margin-top: 1%;">OUR WORKS</h6>
+        <h5 style="text-align: center; font-family: fantasy; margin-bottom: 1%;">WHAT WE DONE SO FAR</h5>
+        <p style="font-size: 11px; text-align:center; font-family: system-ui;">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Minus labore, soluta vitae<br>
+            quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+            dignissimos cupiditate, nobis odit? Soluta, odio amet.
+        </p>
+    </div>
+    <div class="list">
+        <ul>
+            <li>WEB DESIGN</li>
+            <li>GRAPHIC DESIGN</li>
+            <li>PHOTOGRAPHY</li>
+            <li>ILLUSTRATION</li>
+        </ul>
+    </div>
+
+    <div class="matter">
+        <img src="./crop.jpg" style="width: 30%;">
+        <div style="margin-top: 6%;">
+            <h3>Our Awesome Image</h3>
+            <p style="font-size: 11px;margin-bottom: 8%; font-family: system-ui;">Lorem ipsum dolor, sit amet
+                consectetur
+                adipisicing elit. Minus labore, soluta vitae<br>
+                quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+                dignissimos cupiditate, nobis odit? Soluta, odio amet.<br>
+                dignissimos cupiditate, nobis odit? Soluta, odio aet.<br>
+                dignissimos cupiditate, nobis odit? Soluta, odio at.<br>
+            </p>
+            <a href="#" style="text-decoration:none">VIEW THIS</a>
+        </div>
+    </div>
+    <img src="./crop1.jpg" style="width: 100%; margin-top:40px;">
+
+    <i class="fa fa-angle-double-down" aria-hidden="true"
+        style="margin-bottom: 20px; margin-top:10px;  margin-left:  49%;color: #fff; background-color: #fde402; padding: 12px;"></i>
+
+    <div>
+        <h3 style="font-family:sans-serif; text-align: center; margin-bottom: 10px;">DO YOU LIKE OUR PORTFOLIO?</h3>
+        <p style="font-size: 10px; font-family:sans-serif; text-align: center; margin-bottom: 2%;">Quos autem officia
+            veritatis, quibusdam similique veniam ab omnis aliquam et.</p>
+        <a href="#"
+            style="text-decoration:none;  background-color: #f3db06; font-family: fantasy; border-radius: 3px; padding: 10px 32px; font-size: 12px; margin-left: 45%; margin-bottom: 2%; color: #fff;">CONTACT
+            US</a>
+    </div>
+
+    <div class="numbers">
+        <h3>WE ARE PROUD OF THESE NUMBERS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.Temporibus fuga dolore delectus! Delectus, autem.
+        </p>
+        <div class="h2">
+            <div style="border: 1px solid #f3db06; padding: 10px 25px 10px 25px;
+            margin-bottom: 5%;">
+                <h2>1600</h2>
+                <h6>HAPPY CLIENTS</h6>
+            </div>
+            <div style="border: 1px solid #f3db06; padding: 10px 25px 10px 25px;
+            margin-bottom: 5%;">
+                <h2>3200</h2>
+                <h6>COMPLETED PROJECTS</h6>
+            </div>
+            <div style="border: 1px solid #f3db06; padding: 10px 25px 10px 25px;
+            margin-bottom: 5%;">
+                <h2>40</h2>
+                <h6>AWARDS</h6>
+            </div>
+            <div style="border: 1px solid #f3db06; padding: 10px 25px 10px 25px;
+            margin-bottom: 5%;">
+                <h2>20 000</h2>
+                <h6>COFFEE DRINKS</h6>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h6 style="text-align: center; margin-bottom: 0.5%; margin-top: 1%;">ABOUT US</h6>
+        <h5 style="text-align: center; font-family: fantasy; margin-bottom: 1%;">WHO WE ARE</h5>
+        <p style="font-size: 11px; text-align:center; font-family: system-ui;">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Minus labore, soluta <br>
+            quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+            dignissimos cupiditate, nobis odit? Soluta, odio amet.
+        </p>
+    </div>
+
+    <div class="above">
+        <div class="left">
+            <i class="fa fa-clock-o" aria-hidden="true" style=" background-color: #f3db06;
+                color: #fff; padding: 10px 10px 10px 10px; border-radius: 50%;
+                font-size: 35px;"></i>
+            <div style="margin-left: 15px;">
+                <h6>ON TIME PROJECTS</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Minus labore, soluta <br>
+                    quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+                    dignissimos cupiditate, nobis odit? Soluta, odio amet.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <i class="fa fa-life-ring" aria-hidden="true" style=" background-color: #f3db06;
+                color: #fff; padding: 10px 10px 10px 10px; border-radius: 50%;
+                font-size: 35px;"></i>
+            </div>
+            <div style="margin-left: 15px;">
+                <h6>FULLY SUPPORT</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Minus labore, soluta <br>
+                    quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+                    dignissimos cupiditate, nobis odit? Soluta, odio amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="below">
+        <div class="left">
+            <i class="fa fa-thumbs-up" aria-hidden="true" style=" background-color: #f3db06;
+                color: #fff; padding: 10px 10px 10px 10px; border-radius: 50%;
+                font-size: 35px;"></i>
+            <div style="margin-left: 15px;">
+                <h6>PROFESSIONAL EXPERIENCE</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Minus labore, soluta <br>
+                    quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+                    dignissimos cupiditate, nobis odit? Soluta, odio amet.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <i class="fa fa-comments" aria-hidden="true" style=" background-color: #f3db06;
+                color: #fff; padding: 10px 10px 10px 10px; border-radius: 50%;
+                font-size: 35px;"></i>
+            </div>
+            <div style="margin-left: 15px;">
+                <h6>COMMUNICATIVE TEAM</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Minus labore, soluta <br>
+                    quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+                    dignissimos cupiditate, nobis odit? Soluta, odio amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; margin-top:4%; margin-bottom:1%; ">THE TEAM</h3>
+    <p style="text-align: center; margin-bottom: 3%; font-size:10px;">Quos autem officia veritatis,
+        quibusdam similique veniam ab omnis aliquam Quos autem officia veritatis. </p>
+
+    <div class="pictures">
+        <div>
+            <img src="./men1.png" style="width: 68%; margin-left: 20%;">
+            <h5>JOHN DOE</h5>
+            <h6>CREATIVE DIRECTOR</h6>
+        </div>
+        <div>
+            <img src="./men2.png">
+            <h5>JOHHNY DEPP</h5>
+            <h6>ART DIRECTOR</h6>
+        </div>
+        <div>
+            <img src="./men3.png" style="width: 85%; margin-left: 8%;">
+            <h5>JOHHNY DEPP</h5>
+            <h6>WEB DEVELOPER</h6>
+        </div>
+        <div>
+            <img src="./men4.png">
+            <h5>JOHHNY DEPP</h5>
+            <h6>PHOTOGRAPHER</h6>
+        </div>
+    </div>
+
+    <div style="padding: 30px 10px 20px 325px; margin-top: 1%; background-color: #000;">
+        <h6 style="color: #f3db06;">JOHN DOE</h6>
+        <P style="color: #fff; font-size: 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+            accusamus odit debitis,<br>
+            cupiditate blanditiis voluptatibus! Laboriosam eius dolorem, deserunt tempora ab saepe<br>
+            cupiditate nostrum iste atque exercitationem quae nobis qui?</P>
+        <div style="color: #fff; padding: 5px;">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h3>SKILLS</h3>
+        <p>Quibusdam similique veniam ab omnis aliquam Quos autem officia veritatis. aliquam Quos autem officia
+            veritatis.</p>
+        <div class="skills1">
+            <div>
+                <h2>90%</h2>
+                <h6>HTML & CSS</h6>
+            </div>
+            <div>
+                <h2>96%</h2>
+                <h6>AI & PS</h6>
+            </div>
+            <div>
+                <h2>85%</h2>
+                <h6>JS & PHP</h6>
+            </div>
+            <div>
+                <h2>94%</h2>
+                <h6>PHOTOGRAPHY</h6>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h6 style="text-align: center; margin-bottom: 0.5%; margin-top: 1%;">OUR CLIENTS</h6>
+        <h5 style="text-align: center; font-family: fantasy; margin-bottom: 1%;">WHO LOVE TO WORK WITH US</h5>
+        <p style="font-size: 11px; text-align:center; font-family: system-ui;">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Minus labore, soluta <br>
+            quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+            dignissimos cupiditate, nobis odit? Soluta, odio amet.
+        </p>
+    </div>
+    <div style="display: flex; justify-content: space-evenly; max-width: 50%; margin-left: 25%;">
+        <img src="../Example2/1.png" style="width: 125px; height: 50px; margin-top: 5%;">
+        <img src="../Example2/2.png" style="width: 80px; height: 50px; margin-top: 5%;">
+        <img src="../Example2/3.png" style="width: 94px; height: 95px; margin-top: 3%;">
+        <img src="../Example2/4.png" style="width: 80px; height: 80px; margin-top: 4%;">
+        <img src="../Example2/1.png" style="width: 125px; height: 50px; margin-top: 5%;">
+    </div>
+
+    <div style="text-align: center;">
+        <i class="fa fa-angle-double-left" aria-hidden="true"
+            style="background-color: #f3db06; padding: 5px; margin-right: 5px;"></i>
+        <i class="fa fa-angle-double-right" aria-hidden="true" style="background-color: #f3db06; padding: 5px;"></i>
+    </div>
+
+    <div class="quote">
+        <h6>Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Minus labore, soluta <br>
+            quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+            dignissimos cupiditate, nobis odit? Soluta, odio amet.</h6>
+        <h6 style="margin-top: 2%;">JHONNY DEPP..</h6>
+    </div>
+
+    <div>
+        <h6 style="text-align: center; margin-bottom: 0.5%; margin-top: 1%;">CONTACT US</h6>
+        <h5 style="text-align: center; font-family: fantasy; margin-bottom: 1%;">WHERE YOU CAN FIND US</h5>
+        <p style="font-size: 11px; text-align:center; font-family: system-ui;">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Minus labore, soluta <br>
+            quos autem officia veritatis, quibusdam similique veniam ab omnis aliquam et<br>
+            dignissimos cupiditate, nobis odit? Soluta, odio amet.
+        </p>
+    </div>
+
+    <div class="contact-us">
+        <div class="a">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <h6>OUR ADDRESS</h6>
+            <P>#14-4-40, Mandi Bazar,Warangal.</P>
+        </div>
+        <div class="b">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <h6>OUR MAIL</h6>
+            <P>rizwanahmed6229@gmail.com</P>
+        </div>
+        <div class="c">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            <h6>OUR PHONE</h6>
+            <P>+91 9182394728</P>
+        </div>
+    </div>
+
+    <div class="message">
+        <h4 style="text-align: center; font-family: sans-serif; margin-bottom: 5px;">SEND US A MESSAGE</h4>
+        <p style="font-size: 8px; margin-bottom: 1%;"> quos autem officia veritatis, quibusdam similique
+            veniam ab omnis aliquam et quibusdam similique veniam ab omnis aliquam et.</p>
+        <input type="text" placeholder="Your Name"
+            style="font-style: italic; font-size: 8px; padding: 10px 50px 10px 10px;background-color: rgba(255, 255, 255, 0) ; border: 1px solid white;">
+        <input type="text" placeholder="Your Mail"
+            style="font-style: italic; font-size: 8px; padding: 10px 50px 10px 10px;background-color: rgba(255, 255, 255, 0) ; border: 1px solid white;">
+        <input type="text" placeholder="Support"
+            style="font-style: italic; font-size: 8px; padding: 10px 50px 10px 10px;background-color: rgba(255, 255, 255, 0) ; border: 1px solid white;"><br>
+        <textarea rows="5" cols="67" placeholder="Enter Message Here"
+            style="font-style: italic; font-size: 8px; padding: 10px 126px 60px 13px; margin-top: 1%; margin-bottom: 2%;background-color: rgba(255, 255, 255, 0) ; border: 1px solid white;"></textarea><br>
+        <a href="#" style="text-decoration:none">SEND MESSAGE</a>
+    </div>
+    <div style="text-align: center; background-color:#000; color:#fff;">
+        <i class="fa fa-copyright" aria-hidden="true" style="font-size: 10px;">Copyright 2022 S_mak. All Right
+            Reserved.</i>
+        <div style="display: flex; justify-content: center;">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true" style="margin-left: 15px; margin-right:15px;"></i>
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+
+</html>

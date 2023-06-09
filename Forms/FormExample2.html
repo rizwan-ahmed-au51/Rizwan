@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FormExample2</title>
+		<style>
+			*{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+			}
+			form {
+				background-color:gray;
+				width:500px;
+				padding:50px;
+				margin: 0 auto;
+			}
+			form input{
+				width: 100%;
+				margin: 15px 0;
+				padding: 10px;
+				box-sizing: border-box;
+				border-radius: 15px;
+				border:none;
+			}
+			form button{
+				padding:5px 15px;
+				background-color: skyblue;
+				border-radius:10px;
+				margin-top: 15px;
+			}
+			form .labelFlex{
+				display: flex;
+				align-items: center;
+			}
+			form .heading{
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h1>Contact Us</h1>
+			<small>Please complete the form below.</small>
+			<hr>
+			<div class="labelFlex">
+				<div class="heading">
+					<label>Name</label><br>
+					<small>Add your name</small>
+				</div>
+				<div class="inputblock">	
+					<input type="text" placeholder="Mahesh Prasad">
+				</div>
+			</div>
+
+			<label>Email</label><br>
+			<small>Add a valid address</small>
+			<input type="text" placeholder="mail@example.com">
+
+			<label>Phone</label><br>
+			<small>Add valid 10 digit mobile no.</small>
+			<input type="text" placeholder="888888888">
+
+			<label>Web-site</label><br>
+			<small>Add your web-site url</small>
+			<input type="text" placeholder="http://www.example.com">
+
+			<label>Message</label><br>
+			<small>Write something to us</small>
+			<input type="text" placeholder="Write something to us">
+			
+			<button>send</button>
+		</form>
+	</body>
+</html>

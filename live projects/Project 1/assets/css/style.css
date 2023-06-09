@@ -1,0 +1,1041 @@
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* above the navbar */
+
+.logo h2 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Oregano', cursive !important;
+}
+
+.logo {
+    background-image: linear-gradient(#127ed5bf, #127ed5d1), url(../images/urology-banner.png);
+    display: block;
+    background-size: cover;
+    padding: 28px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-bottom: -31px;
+
+}
+
+
+/* navbar */
+
+
+.navbar {
+    color: #fff;
+    position: absolute;
+    font-size: 15px;
+    margin: 0px auto 0 auto;
+    max-width: 1200px;
+    margin-bottom: -24px !important;
+    z-index: 1;
+}
+
+.navbar .navbar-list {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    display: table;
+    padding: 0;
+    background: linear-gradient(#022346, #5123a1);
+}
+
+.navbar .navbar-list li {
+    text-align: center;
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-list li a:active {
+    background-color: rgba(0, 0, 0, 0.11);
+    color: #fff;
+}
+
+.navbar .navbar-list li a {
+    display: block;
+    padding: 0 13px;
+    line-height: 50px;
+    text-decoration: none !important;
+    position: relative;
+    color: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar .navbar-list li a .navbar-arrow {
+    margin-right: 0px;
+    float: right;
+    margin-left: 0;
+}
+
+.navbar .navbar-list li a i {
+    display: inline-block;
+    font-size: 15px;
+    line-height: inherit;
+    margin-right: 10px;
+}
+
+.navbar .navbar-list li .services-menu {
+    width: 240px;
+    /* left: 0px; */
+    top: 50px;
+    color: #000;
+    z-index: 1000;
+    margin: 0px;
+    text-align: left;
+    padding: 14px 5px;
+    font-size: 15px;
+    border: solid 1px #eeeeee;
+    background-color: #fff;
+}
+
+.navbar .navbar-list li .services-menu li a {
+    line-height: 18px;
+    border-right: none;
+    text-align: left;
+    padding: 6px 0px;
+    color: #666666;
+    border-right: 0 none;
+    display: block;
+    background-color: #fff;
+    color: #424242;
+    border-radius: 5px;
+}
+
+.navbar .navbar-list li a:hover {
+    background-color: #fff;
+    color: #424242;
+    box-shadow: 2px 2px 10px 2px rgb(13, 198, 218);
+}
+
+.navbar .navbar-list li .dropdown-menu li a:hover {
+    background: linear-gradient(#022346, #5123a1);
+    color: #fff;
+}
+
+.navbar .navbar-list li .dropdown-menu li {
+    display: block;
+    text-align: left;
+}
+
+
+
+/** carousel **/
+
+
+.simple-carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    height: 100vh !important;
+}
+
+.simple-carousel ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.simple-carousel ul li.slide {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.simple-carousel ul li.slide.active {
+    opacity: 1;
+}
+
+.simple-carousel a.control_prev,
+a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 5em 2em;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.simple-carousel a.control_prev:hover,
+a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.simple-carousel a.control_prev {
+    left: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+.simple-carousel a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+
+/* about doctor */
+
+
+.about-doc h2 {
+    color: #02024a;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 50px;
+    font-family: 'Oregano', cursive;
+}
+
+.about-doc h2::before {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #45cf07;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 1s ease;
+}
+
+.about-doc h2::after {
+    content: '';
+    height: 2px;
+    width: 150px;
+    background-color: #45cf07;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+}
+
+
+ul.tabs {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 40%);
+}
+
+ul.tabs li {
+    cursor: pointer;
+    padding: 3px 15px;
+    line-height: 31px;
+    color: white;
+    text-align: left;
+    background: #025192;
+    background: linear-gradient(to bottom, #0c6ab8 0%, #127dd5d0 100%);
+    transition: all 0.3s ease;
+}
+
+ul.tabs li:active {
+    background: #055da5;
+    background: linear-gradient(to bottom, #075799 0%, #055da5 100%);
+    color: #fff;
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+
+
+.tab_container {
+    background-color: aliceblue;
+    display: inline-block;
+    min-height: 240px;
+    vertical-align: top;
+    position: relative;
+    z-index: 20;
+    left: -2px;
+    width: 100%;
+    min-width: 10px;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+}
+
+.profile h3 {
+    border-left: 3px solid #055aa0;
+    padding-left: 10px;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px;
+}
+
+.tab_drawer_heading {
+    display: none;
+}
+
+
+.tab_content {
+    padding: 20px;
+    height: 100%;
+    display: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* meet doc */
+
+.meet_doctor {
+    padding: 50px 0px;
+}
+
+.meet_doctor .block1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meet_doctor .block1 .box-even {
+    background-color: #127ed5;
+    padding: 15px;
+    color: #fff;
+}
+
+.meet_doctor .block1 .box {
+    width: 33.3%;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.meet_doctor .block1 .box-even h3 {
+    padding: 0px 15px;
+    border-bottom: 1px solid #fff;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px;
+}
+
+.meet_doctor .block1 .box p {
+    font-size: 18px;
+    padding: 0px 15px;
+}
+
+.meet_doctor .block1 .education {
+    background-image: url(../images/education.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+.meet_doctor .block1 .education::before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: -15px;
+    transform: rotate(45deg);
+    z-index: 9;
+    height: 20px;
+    width: 20px;
+    z-index: 9;
+    height: 30px;
+    width: 30px;
+    background-color: #127ed5;
+}
+
+.meet_doctor .block1 .experience {
+    background-image: url(../images/experience.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+.meet_doctor .block1 .box-odd {
+    background-color: #127ed5#127ed5;
+}
+
+.meet_doctor .block1 .box-odd::before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    top: -15px;
+    transform: rotate(45deg);
+    z-index: 9;
+    height: 20px;
+    width: 20px;
+    background-color: #127ed5;
+    z-index: 9;
+    height: 30px;
+    width: 30px;
+}
+
+
+.meet_doctor .block1 .clinical {
+    background-image: url(../images/clinical.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+/* meet doc end */
+
+
+
+/* facilities start */
+
+.facility-main {
+    background-color: #3c197c;
+}
+
+.facilities {
+    background-image: linear-gradient(to right, #0b0b784d, transparent), url(../images/surgery.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    background-attachment: fixed;
+    padding: 80px 0px;
+    color: #fff;
+}
+
+.facilities .left {
+    background-size: fill;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    margin: 15px;
+}
+
+.heading h2 {
+    color: #02024a;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 50px;
+    font-family: 'Oregano', cursive;
+}
+
+.heading h2::before {
+    content: '';
+    height: 2px;
+    width: 80px;
+    background-color: #45cf07;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transition: 1s ease;
+}
+
+.heading h2::after {
+    content: '';
+    height: 2px;
+    width: 150px;
+    background-color: #45cf07;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+}
+
+.facilities i {
+    font-size: 20px;
+    margin: 5px;
+    color: #2cff2c;
+    padding: 5px;
+}
+
+.facilities span {
+    font-size: 20px;
+}
+
+/* facilities end */
+
+/* equipment start */
+
+.equipment {
+    padding: 80px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+.equipment img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 50px;
+}
+
+.equipment h3 {
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px;
+
+}
+
+/* equipment end */
+
+
+/* appoinment start */
+
+.appointment {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/appointmentbg.jpg);
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.appointment form .sub {
+    display: inline-flex;
+    width: 100%;
+}
+
+.appointment form .sub input {
+    margin: 5px;
+}
+
+.appointment form input,
+.appointment form textarea {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.appointment form textarea {
+    margin: 5px;
+}
+
+.appointment form button {
+    float: right;
+    padding: 5px 15px;
+    background-color: navy;
+    color: #fff;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    border: 1px solid;
+}
+
+.appointment .timings {
+    max-width: 250px;
+    margin: auto;
+}
+
+.appointment .timings h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px;
+}
+
+.appointment .timings .sub {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.appointment .timings .sub p {
+    font-size: 20px;
+}
+
+
+/* appoinment end */
+
+
+.tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgb(0 0 0 / 50%);
+}
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+}
+
+.for_you {
+    margin-top: 30px;
+    box-shadow: 10px 10px 0px 10px rgb(255, 255, 255);
+}
+
+.for_you .col-md-4 {
+    padding: 2px;
+}
+
+.for_you input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #127ed5;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+.tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+    font-size: 18px;
+}
+
+.tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.footer {
+    background-image: linear-gradient(rgb(50 22 123 / 75%), rgb(51 22 123 / 65%)), url(../images/footerbg.jpg);
+    background-size: cover;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+
+.footer img {
+    max-width: 200px;
+    border: 1px solid #fff;
+    margin-top: 25px;
+}
+
+.footer h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px
+}
+
+.footer h3::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    top: 35px;
+    left: 0px;
+    background-color: #45cf07;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.footer .social-links i {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+/*  */
+
+.fa-youtube {
+    background-color: #ff0000;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(45deg, #515bd4, #8134af, #dd2a7b);
+}
+
+.fa-twitter {
+    background-color: #1DA1F2;
+}
+
+.fa-facebook-square {
+    background-color: #4267B2;
+}
+
+/* bottom footer */
+
+.bottom-footer {
+    background-color: black;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px;
+}
+
+.bottom-footer .right {
+    text-align: right;
+}
+
+.bottom-footer p {
+    font-size: 18px;
+    color: #fff;
+    word-spacing: 5px;
+    margin-top: 15px;
+}
+
+
+
+@media(max-width: 991px) {
+
+    .logo h2 {
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 0px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #02024a;
+        margin-left: -50px;
+
+    }
+
+    .doc {
+        display: none;
+    }
+
+    .logo {
+        background-color: #fff;
+        background-image: none;
+    }
+
+
+    .meet_doctor .block1 .box {
+        width: 100% !important;
+        background-image: none;
+        margin-bottom: -134px;
+    }
+
+    .meet_doctor .block1 .box-odd::before {
+        display: none;
+    }
+
+    .meet_doctor .block1 .education::before {
+        display: none;
+    }
+
+    .meet_doctor .block1 .box p {
+        font-size: 18px;
+    }
+
+
+    .equipment img {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width:768px) {
+    .logo h2 {
+        font-weight: lighter;
+        font-size: 25px;
+    }
+    .emty_box{
+        display: none;
+    }
+
+    .tab_container {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-top: none;
+        border-radius: 0;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .facilities {
+        background-image: linear-gradient(to right, #0b0b784d, transparent), url(../images/surgery.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-attachment: fixed;
+        padding: 80px 0px;
+        color: #fff;
+    }
+
+    .appointment form button {
+        float: right;
+        padding: 5px 15px;
+        background-color: navy;
+        color: #fff;
+        outline: none;
+        border-radius: 20px;
+        border: none;
+        font-size: 14px;
+        border: 1px solid;
+    }
+
+    .appointment .timings h3 {
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 15px;
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+    }
+
+    .appointment .timings .sub p {
+        font-size: 15px;
+    }
+
+    .bottom-footer p {
+        font-size: 14px;
+        color: #fff;
+        word-spacing: 5px;
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (max-width:426px) {
+    .logo h2 {
+        font-weight: lighter;
+        font-size: 22px;
+    }
+
+    .heading h2 {
+        color: #02024a;
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 50px;
+        font-family: 'Oregano', cursive;
+    }
+
+    .about-doc h2 {
+        color: #02024a;
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 50px;
+        font-family: 'Oregano', cursive;
+    }
+    .footer img {
+        max-width: 180px;
+        border: 1px solid #fff;
+        margin-top: 25px;
+    }
+    .footer h3 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 25px;
+        position: relative;
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+    }
+    .footer ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #127ed5;
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        font-size: 16px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .equipment h3 {
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .logo h2 {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    .facilities span {
+        font-size: 15px;
+    }
+
+    .equipment img {
+        margin-top: 0px;
+    }
+
+    .meet_doctor .block1 .box-even h3 {
+        padding: 0px 15px;
+        border-bottom: 1px solid #fff;
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+
+    .meet_doctor .block1 .box p {
+        font-size: 16px;
+    }
+
+    .facilities .left {
+        height: 0px;
+        margin: 0px; 
+    }
+}
+
+@media (max-width:376px) {
+    .footer img {
+        max-width: 150px;
+        border: 1px solid #fff;
+        margin-top: 25px;
+    }
+    .footer h3 {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 25px;
+        position: relative;
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+    }
+    .footer ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .heading h2 {
+        color: #02024a;
+        font-size: 25px;
+        position: relative;
+        margin-bottom: 50px;
+        font-family: 'Oregano', cursive;
+    }
+
+    .about-doc h2 {
+        color: #02024a;
+        font-size: 25px;
+        position: relative;
+        margin-bottom: 50px;
+        font-family: 'Oregano', cursive;
+    }
+
+    .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #127ed5;
+        cursor: pointer;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        font-size: 14px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .equipment h3 {
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .logo h2 {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    .facilities span {
+        font-size: 15px;
+    }
+
+    .equipment img {
+        margin-top: 0px;
+    }
+
+    .meet_doctor .block1 .box-even h3 {
+        padding: 0px 15px;
+        border-bottom: 1px solid #fff;
+        font-family: 'Oregano', cursive;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    .meet_doctor .block1 .box p {
+        font-size: 14px;
+    }
+
+    .facilities .left {
+        height: 0px;
+        margin: 0px; 
+    }
+}

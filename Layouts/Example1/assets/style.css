@@ -1,0 +1,248 @@
+body,
+html {
+    font: 400 15px'Raleway', sans-serif;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.menu {
+    background-image: url(../pic1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.menu h3 {
+    color: #fff;
+    margin-bottom: 25%;
+}
+.menu h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 5%;
+}
+.menu p {
+    margin-bottom: 5%;
+}
+.menu a {
+    
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu .fa {
+    margin-left: 100%;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.about_us .A {
+    background-color: #000;
+    color: #fff;
+    padding: 110px;
+}
+
+.about_us .B {
+    background-color:#38D3D8;
+    color: #fff;
+    padding: 110px;
+}
+
+.about_us .C {
+    background-color: #14B9BF;
+    color: #fff;
+    padding: 110px;
+}
+
+.about_company {
+    color: #000;
+}
+
+.about_company .fa {
+    font-size: 70px;
+    margin-top: 5%;
+}
+
+.about_company p {
+    margin-bottom: 5%;
+}
+
+.about_company a {
+    background-color:#000;
+    border-radius: 5px;
+    padding: 15px 32px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.about_company a:hover {
+    background-color:#38D3D8;
+    color: #000;
+}
+
+.about_company2 {
+    margin-top: 5%;
+    padding-left: 0 !important;
+    padding-right:0 !important ;
+}
+
+.about_company2 img {
+    width: 100%;
+    height: 626px;
+    object-fit: cover;
+}
+
+.about_company2 .A {
+    padding: 0 !important;
+}
+
+.about_company2 .B {
+    padding: 126px;
+    background-color: #38D3D8;
+}
+
+.about_company2 .B a {
+    background-color: rgb(232, 228, 228);
+    border-radius: 30px;
+    padding: 15px 32px;
+    font-size: 12px;
+    margin-top: 3%;
+    color: #000;
+}
+
+.about_company2 .B a:hover {
+    background-color: #000;
+    color:  #38D3D8;
+}
+
+.our_services {
+    padding: 80px;
+    text-align: center;
+}
+
+.our_services .fa {
+    font-size: 50px;
+    color: #38D3D8;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.our_services .fa:hover {
+    background-color: #38D3D8;
+    color: #000;
+}
+
+.our_services a {
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 32px;
+    font-size: 12px;
+
+}
+
+.our_services a:hover {
+    background-color: #38D3D8;
+    columns: #000 !important;
+}
+
+.communication img {
+    width: 100%;
+    object-fit: cover;
+    height: 619px;
+    padding: 0 !important;
+}
+
+.communication .A {
+    padding: 148px;
+    background-color: rgb(236, 241, 241);
+}
+
+.communication .A a {
+    background-color: #000;
+    border-radius: 30px;
+    padding: 15px 32px;
+    font-size: 12px;
+    margin-top: 3%;
+    color: #fff;
+}
+
+.communication .A a:hover{
+    background-color: #38D3D8;
+    color: #000;
+}
+
+.communication .B {
+    padding: 0 !important;
+}
+
+.know {
+    background-color:#38D3D8;
+    padding: 25px;
+}
+
+.know a {
+    background-color: #000;
+    border-radius: 30px;
+    padding: 10px 32px;
+    font-size: 12px;
+    margin-top: 10%;
+    color: #fff;
+    margin-left: 25%;
+}
+
+.know a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.know .B {
+    margin-top: 3%;
+}
+
+.marketing {
+    margin-bottom: 30%;
+
+}
+
+.read_button a {
+    background-color: #000;
+    border-radius: 3px;
+    padding: 10px 32px;
+    font-size: 12px;
+    color: #fff;
+
+}
+
+.read_button a:hover {
+    background-color: #38D3D8;
+    color: #000;
+}
+.footer {
+    background-color: #000;
+    padding: 40px;
+    margin-top: 5%;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}

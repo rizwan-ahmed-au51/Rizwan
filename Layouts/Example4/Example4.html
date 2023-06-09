@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar ul {
+            display: flex;
+            float: right;
+            font-size: 12px;
+            list-style-type: none;
+        }
+
+        .navbar ul li {
+            color: #fde402;
+            padding: 0px 20px 0px 0px;
+        }
+
+        .navbar ul li a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            padding: 15px 5px 15px 5px;
+        }
+
+        .navbar ul li a:hover {
+            color: #Fff;
+            background-color: #2191C3;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .navbar h3 {
+            padding: 10px 12px 0px 0px;
+        }
+
+        .heading {
+            background-image: linear-gradient(#000000b6, #000000b7), url(../Example4/banner.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 250px;
+            color: #Fff;
+        }
+
+        .heading p {
+            font-size: 10px;
+            margin-top: 2%;
+            margin-bottom: 10%;
+        }
+
+        .heading a {
+            background-color: #F58560;
+            font-family: sans-serif;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .heading a:hover {
+            color: #000;
+        }
+
+        .our-services a {
+            background-color: #2191C3;
+            font-family: sans-serif;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 12px;
+            color: #fff;
+
+        }
+
+        .icons {
+            display: flex;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            text-align: center;
+        }
+
+        .icons p {
+            font-size: 10px;
+            margin-top: 2%;
+
+        }
+
+        .our-offers {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 30px 200px 20px 200px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #2E3E4E;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <h3>Your logo</h3>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Search<i class="fa fa-search" aria-hidden="true" style="margin-left: 5px;"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>GOOD DESIGN IS GOOD BUSINESS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam eos quaerat<br>
+            similique ipsum quam, amet optio reprehenderit tenetur. Iure culpa impedit, aperiam<br>
+            expedita quo odio labore quae recusandae sed?</p>
+        <a href="#" style="text-decoration:none">LEARN MORE</a>
+    </div>
+    <div class="our-services" style="text-align: center;">
+        <a href="#" style="text-decoration:none">OUR SERVICES</a>
+    </div>
+
+    <div class="icons">
+        <div>
+            <i class="fa fa-laptop" aria-hidden="true"
+                style="color:#fff; background-color:#2191C3;padding:15px; font-size: 70px; border-radius: 50%; margin-bottom: 10%;"></i>
+            <h5>WEB DESIGN</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Laudantium quibusdam eos quaerat<br>
+                similique ipsum quam,</p>
+        </div>
+        <div style="margin-left: 4%; margin-right:4%;">
+            <i class="fa fa-search" aria-hidden="true"
+                style="color:#fff; background-color:#2191C3;padding:15px; font-size: 70px; border-radius: 50%; margin-bottom: 10%;"></i>
+            <h5>Search Optimization</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Laudantium quibusdam eos quaerat<br>
+                similique ipsum quam,</p>
+        </div>
+        <div style="margin-right: 4%;">
+            <i class="fa fa-shopping-cart" aria-hidden="true"
+                style="color:#fff; background-color:#2191C3;padding:15px; font-size: 70px; border-radius: 50%; margin-bottom: 10%;"></i>
+            <h5>Online Shop</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Laudantium quibusdam eos quaerat<br>
+                similique ipsum quam,</p>
+        </div>
+        <div>
+            <i class="fa fa-thumbs-up" aria-hidden="true"
+                style="color:#fff; background-color:#2191C3;padding:15px; font-size: 70px; border-radius: 50%; margin-bottom: 10%;"></i>
+            <h5>Social Media</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Laudantium quibusdam eos quaerat<br>
+                similique ipsum quam,</p>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-evenly; background-color: #2E3E4E; padding: 20px;">
+        <h4 style="color: #F58560; font-size: 20px;">Our Portfolio Awesome</h4>
+        <a href="#" style="text-decoration:none; background-color: #2191C3;
+        font-family: sans-serif;
+        border-radius: 3px;
+        padding: 7px 25px;
+        font-size: 12px;
+        color: #fff;">More Works</a>
+    </div>
+
+    <div
+        style="display: flex; background-color: #2E3E4E; justify-content: space-evenly; padding: 25px 300px 50px 300px;">
+        <div style="text-align: center;">
+            <i class="fa fa-camera" aria-hidden="true"
+                style="padding: 70px; font-size:20px; background-color:#BEBEBE; border: 5px solid white;"></i>
+            <h6 style="color: #f58560; margin-top: 5%; ">Lorem ipsum dolor sit amet</h6>
+            <p style="font-size: 8px; color: #fff;">Lorem ipsum dolor Lorem ipsum dolor sit amet</p>
+        </div>
+        <div style="text-align: center;">
+            <i class="fa fa-camera" aria-hidden="true"
+                style="padding: 70px; font-size:20px; background-color:#BEBEBE; border: 5px solid white;"></i>
+            <h6 style="color: #f58560;  margin-top: 5%;">Lorem ipsum dolor sit amet</h6>
+            <p style="font-size: 8px; color: #fff;">Lorem ipsum dolor Lorem ipsum dolor sit amet</p>
+        </div>
+        <div style="text-align: center;">
+            <i class="fa fa-eye" aria-hidden="true"
+                style="padding: 70px; font-size:15px; background-color:#BEBEBE; border: 5px solid white;">
+                Details</i>
+            <h6 style="color: #f58560; margin-top: 5%; ">Lorem ipsum dolor sit amet</h6>
+            <p style="font-size: 8px; color: #fff;">Lorem ipsum dolor Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3%;">
+        <h2 style="color: #2191C3;">WHAT WE OFFER</h2>
+        <P style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laudantium quibusdam eos quaerat <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+    </div>
+
+    <div class="our-offers">
+        <div>
+            <h5 style="color: #2191c3;margin-bottom: 5%;">Web Design</h5>
+            <p style="font-size: 8px;">Lorem ipsum dolor, sit amet consectetur<br>
+                adipisicing elit. Aliquid libero mo<br>
+                lestiae laboriosam voluptate, labor<br>
+                um minima eveniet, voluptatibus con<br>
+                sectetur quis esse atque sequi remv<br>
+                maxime deleniti sit id necessitat<br>
+                ibus voluptas maiores!</p>
+            <a href="#" style="text-decoration:none; background-color: #2191C3;
+        font-family: sans-serif;
+        border-radius: 3px;
+        padding: 3px 10px;
+        font-size: 8px;
+        margin-left: 30%;
+        color: #fff;">Details</a>
+        </div>
+        <div>
+            <h5 style="color: #2191c3;margin-bottom: 5%;">Search Optimization</h5>
+            <p style="font-size: 8px;">Lorem ipsum dolor, sit amet consectetur<br>
+                adipisicing elit. Aliquid libero mo<br>
+                lestiae laboriosam voluptate, labor<br>
+                um minima eveniet, voluptatibus con<br>
+                sectetur quis esse atque sequi remv<br>
+                maxime deleniti sit id necessitat<br>
+                ibus voluptas maiores!</p>
+        </div>
+        <div>
+            <h5 style="color: #2191c3;margin-bottom: 5%;">Online Shop</h5>
+            <p style="font-size: 8px;">Lorem ipsum dolor, sit amet consectetur<br>
+                adipisicing elit. Aliquid libero mo<br>
+                lestiae laboriosam voluptate, labor<br>
+                um minima eveniet, voluptatibus con<br>
+                sectetur quis esse atque sequi remv<br>
+                maxime deleniti sit id necessitat<br>
+                ibus voluptas maiores!</p>
+            <a href="#" style="text-decoration:none; background-color: #2191C3;
+        font-family: sans-serif;
+        border-radius: 3px;
+        padding: 3px 10px;
+        font-size: 8px;
+        margin-left: 30%;
+        color: #fff;">Details</a>
+        </div>
+        <div>
+            <h5 style="color: #2191c3; margin-bottom: 5%;">Social Media</h5>
+            <p style="font-size: 8px;">Lorem ipsum dolor, sit amet consectetur<br>
+                adipisicing elit. Aliquid libero mo<br>
+                lestiae laboriosam voluptate, labor<br>
+                um minima eveniet, voluptatibus con<br>
+                sectetur quis esse atque sequi remv<br>
+                maxime deleniti sit id necessitat<br>
+                ibus voluptas maiores!</p>
+        </div>
+    </div>
+    <hr>
+    <h2 style="color: #2191C3; text-align: center; margin-top: 1%;">TESTIMONIALS</h2>
+    <P style="font-family: system-ui; text-align: center;"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laudantium <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q></P>
+    <p style="color: #f58560; font-size: 8px; text-align: center;margin-top: 2%;">Jon Doe/CEO </p>
+
+    <div style="text-align: center; margin-top: 2%;">
+        <img src="./woman.png" style="width: 3%;">
+        <img src="./profile.png" style="width: 3%;">
+        <img src="./woman.png" style="width: 3%;">
+    </div>
+
+    <div class="footer">
+        <div>
+            <h5 style="color: #f58560; margin-bottom: 10px;">BIRD FEEDS</h5>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item <br>
+                https://www.google.co.in/ <br>
+                2 weeks ago</p>
+            <hr>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item <br>
+                https://www.google.co.in/ <br>
+                2 weeks ago</p>
+            <hr>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item <br>
+                https://www.google.co.in/ <br>
+                2 weeks ago</p>
+        </div>
+        <div>
+            <h5 style="color: #f58560; margin-bottom: 10px;">NEWS LETTER</h5>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item
+                Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit.
+                Laudantium <br>Lorem ipsum dolor
+                <hr>
+                <label for="email" style="font-size: 10px; color: #2191c3;">Your Email Address</label><br>
+                <input type="text" placeholder="Your Mail"
+                    style="font-style: italic; font-size: 8px; padding: 10px 50px 10px 10px;">
+                <a href="#" style="text-decoration:none; background-color: #2191C3;
+            font-family: sans-serif;
+            border-radius: 3px;
+            padding: 3px 10px;
+            font-size: 10px;
+            color: #fff;
+            margin-left: 35%;">Sign up</a>
+        </div>
+        <div>
+            <h5 style="color: #f58560; margin-bottom: 10px;">RECENT PROJECTS</h5>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item <br>
+                https://www.google.co.in/ <br>
+                2 weeks ago</p>
+            <hr>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item <br>
+                https://www.google.co.in/ <br>
+                2 weeks ago</p>
+            <hr>
+            <p style="font-size: 10px; color: #fff;">Check out this theme item <br>
+                https://www.google.co.in/ <br>
+                2 weeks ago</p>
+        </div>
+        <div>
+            <h5 style="color: #f58560; margin-bottom: 10px;">CONTACT</h5>
+
+            <div  >
+                <i class="fa fa-phone" aria-hidden="true" style="color: #2191C3;"><p style="font-size: 8px; color: #fff;">+91-9182394728</p></i>
+            </div>
+            <div>
+                <i class="fa fa-mobile" aria-hidden="true"  style="color: #2191C3;"><p style="font-size: 8px; color: #fff;">+91-9182394728</p></i>
+            </div>
+            <div>
+                <i class="fa fa-envelope" aria-hidden="true" style="color: #2191C3;"><p style="font-size: 8px; color: #fff;">rizwanahmed6229@gmail.com</p></i>
+            </div>
+    </div>
+</body>
+
+</html>

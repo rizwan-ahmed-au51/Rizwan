@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FormExample4</title>
+		<style>
+			*{
+				padding:3px;
+				margin:0;
+				box-sizing:border-box;
+			}
+			form{
+				padding:50px;
+				margin:5px; auto;
+			}
+			form input {
+				width: 70%;
+				margin:2px 10px;
+				padding: 3px;
+				box-sizing: border-box;
+				border-radius: 3px;
+			}
+			.checkboxinput{
+				width:30px;
+			}
+			form .formbtn{
+				display: flex;
+				Justify-content: space-between;
+			}
+			form button{
+				padding:3px 7px;
+				margin-top:5px;
+				border-radius:5px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h4>Edit Product (Aniseed Syrup)</h4>
+		<div class="sidebyside">
+			<label>Product Name</label>
+			<input type="text" placeholder="Aniseed Syrup"><br>
+
+			<input type="checkbox" class="checkboxinput"><span>Discontinued</span><br>
+
+			<label>Supplier</label>
+			<input type="text" placeholder="Exotic Liquids"><br>
+
+			<label>Category</label>
+			<input type="text" placeholder="Condiments"><br>
+
+			<label>Quantity Per Unit</label>
+			<input type="text" placeholder="12-550 ml Bottles"><br>
+
+			<label>Unit Price</label>
+			<input type="text" placeholder="000000"><br>
+
+			<label>Units in Stock</label>
+			<input type="text" placeholder="13"><br>
+
+			<label>Units On Order</label>
+			<input type="text" placeholder="70"><br>
+
+			<label>Reorder Level</label>
+			<input type="text" placeholder="25"><br>
+		</div>
+			<div>
+				<button class="formbtn">←Back to List</button>
+				<button class="formbtn">Save</button>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            height: 60px;
+        }
+
+        .navbar h3 {
+            color: #F9AB2D;
+            padding: 20px;
+            margin-left: 60px;
+        }
+
+        .navbar ul {
+            display: flex;
+            float: right;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+        .navbar ul li {
+            color: #fde402;
+            padding: 25px 15px 0px 0px;
+        }
+
+        .navbar ul li a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            padding: 0px 7px;
+        }
+
+        .navbar ul li a:hover {
+            color: #F9AB2D;
+        }
+
+        .navbar .login {
+            padding: 20px;
+        }
+
+        .navbar .login a {
+            background-color: #fff;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 12px;
+            margin-top: 15px;
+            color: #000;
+        }
+
+        .navbar .login a:hover {
+            color: #fff;
+            background-color: #F9AB2D;
+
+        }
+
+        .matter {
+            position: relative;
+            text-align: center;
+
+        }
+
+        .matter img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .h1 {
+            position: absolute;
+            font-size: 25px;
+            color: #fff;
+            font-family: system-ui;
+            top: 37%;
+            bottom: 10%;
+            left: 29%;
+        }
+
+        .content .h2 {
+            position: absolute;
+            color: #F9AB2D;
+            font-family: sans-serif;
+            font-size: 18px;
+            top: 44%;
+            left: 34%;
+        }
+
+        .content .h5 {
+            position: absolute;
+            color: #fff;
+            font-size: 15px;
+            top: 49%;
+            left: 36%;
+            font-family: sans-serif;
+        }
+
+        .content .a a {
+            position: absolute;
+            background-color: #F9AB2D;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 16px;
+            top: 53%;
+            left: 42%;
+            color: #fff;
+
+        }
+
+        .content .a a:hover {
+            color: #000;
+        }
+
+        .service {
+            text-align: center;
+            margin-top: 5%;
+            font-family: system-ui;
+        }
+
+        .service i {
+            color: #F9AB2D;
+            margin-bottom: 1%;
+        }
+
+        .service p {
+            font-size: 13px;
+        }
+
+        .service_menu {
+            display: flex;
+            padding: 20px;
+        }
+
+        .service_menu .A {
+            text-align: center;
+            color: rgb(96, 95, 95);
+            margin-top: 2%;
+            padding: 50px;
+        }
+
+        .service_menu .A:hover {
+            color: #fff;
+            background-color: #F9AB2D;
+        }
+
+        .service_menu .A .fa {
+            font-size: 50px;
+            margin-bottom: 1%;
+        }
+
+        .service_menu .A p {
+            font-size: 13px;
+            padding: 6px;
+            font-family: system-ui;
+        }
+
+        .service_menu .B {
+            text-align: center;
+            color: rgb(96, 95, 95);
+            margin-top: 2%;
+            padding: 50px;
+        }
+
+        .service_menu .B:hover {
+            color: #fff;
+            background-color: #F9AB2D;
+        }
+
+        .service_menu .B .fa {
+            font-size: 50px;
+            margin-bottom: 1%;
+        }
+
+        .service_menu .B p {
+            font-size: 13px;
+            padding: 6px;
+            font-family: system-ui;
+        }
+
+        .service_menu .C {
+            text-align: center;
+            color: rgb(96, 95, 95);
+            margin-top: 2%;
+            padding: 50px;
+        }
+
+        .service_menu .C:hover {
+            color: #fff;
+            background-color: #F9AB2D;
+        }
+
+        .service_menu .C .fa {
+            font-size: 50px;
+            margin-bottom: 1%;
+        }
+
+        .service_menu .C p {
+            font-size: 13px;
+            padding: 6px;
+            font-family: system-ui;
+        }
+
+        .solutions {
+            position: relative;
+
+        }
+
+        .solutions1 h1 {
+            position: absolute;
+            color: #fff;
+            font-family: system-ui;
+            top: 38%;
+            left: 5%;
+        }
+
+        .solutions1 p {
+            position: absolute;
+            color: #fff;
+            font-family: system-ui;
+            font-size: 13px;
+            top: 45%;
+            left: 5%;
+        }
+
+        .solutions1 a {
+            position: absolute;
+            top: 65%;
+            left: 5%;
+            font-family: system-ui;
+            font-size: 13px;
+            background-color: #F9AB2D;
+            border-radius: 3px;
+            padding: 10px 32px;
+            font-size: 12px;
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .solutions1 a:hover {
+            color: #000;
+        }
+
+        .features {
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            font-family: system-ui;
+        }
+
+        .features i {
+            color: #F9AB2D;
+            margin-bottom: 1%;
+        }
+
+        .left .content,
+        .right .content {
+            padding: 20px;
+            font-family: system-ui;
+            font-size: 20px;
+        }
+
+        .left .icon,
+        .right .icon {
+            padding: 40px 27px;
+        }
+
+        .left .icon .fa,
+        .right .icon .fa {
+            font-size: 50px;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 50%;
+
+        }
+
+        .left .icon .fa:hover,
+        .right .icon .fa:hover {
+            background-color: #F9AB2D;
+            color: #fff;
+            border-radius: 50%;
+
+        }
+
+        .above_row {
+            display: flex;
+            justify-content: space-between;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .above_row .left,
+        .above_row .right {
+            display: flex;
+        }
+
+        .above_row .left {
+            text-align: right;
+        }
+
+        .below_row {
+            display: flex;
+            justify-content: space-between;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .below_row .left,
+        .below_row .right {
+            display: flex;
+        }
+
+        .below_row .left {
+            text-align: right;
+        }
+
+        .points {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .left_points {
+            background-color: #F9AB2D;
+            padding: 30px;
+        }
+
+        .right_points {
+            background-color: #000;
+            padding: 30px;
+        }
+
+        .left_points h2,
+        .right_points h2 {
+            font-family: system-ui;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .sign_up h2 {
+            position: absolute;
+            top: 0%;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.493);
+            padding: 68px 378px 140px 420px;
+            font-family: system-ui;
+        }
+
+        .sign_up h4 {
+            position: absolute;
+            top: 17%;
+            left: 43%;
+            font-style: italic;
+            font-family: system-ui;
+            color: #F9AB2D;
+        }
+
+        .submit {
+            position: absolute;
+            top: 26%;
+            left: 37%;
+            display: flex;
+
+        }
+
+        .input-icon-sec {
+            position: relative;
+            padding: 9px 0px 10px 20px;
+            font-size: 10px;
+            font-style: italic;
+            background-color: #fff;
+            border: 0px;
+        }
+
+        .input-icon-sec .fa {
+            position: absolute;
+            left: 5px;
+        }
+
+        .input-icon-sec input {
+            position: relative;
+            font-size: 10px;
+            font-style: italic;
+            border: 0px;
+            color: #fff;
+        }
+
+        .submit a {
+            position: absolute;
+            font-family: system-ui;
+            font-size: 13px;
+            background-color: #F9AB2D;
+            padding: 7px 25px;
+            color: #fff;
+        }
+
+        .submit a:hover {
+            color: #000;
+        }
+
+        .main-footer .links {
+            position: absolute;
+            top: 42%;
+            display: flex;
+            background-color: #323131;
+            color: #ffffff9e;
+            font-family: system-ui;
+            border-bottom: 3px solid black;
+        }
+
+        .links li:hover {
+            color: #F9AB2D;
+        }
+
+        .sub-footer {
+            position: absolute;
+            display: flex;
+            top: 83%;
+            background-color: #323131;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        
+        }
+
+        .mini-footer {
+            margin-top: 2.5%;
+            display: flex;
+            background-color: #323131;
+            color: #ffffff9e;
+            padding: 11px 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <h3>Company Logo</h3>
+        </div>
+        <div>
+            <ul style="list-style-type: none;">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">OUR BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#" style="text-decoration:none">Log In</a>
+            <a href="#" style="text-decoration:none">Sign Up For Free</a>
+        </div>
+    </div>
+    <div class="matter">
+        <img src="./banner.jpg">
+        <div class="content">
+            <div class="h1">
+                <h1>INVESTMENT ADVISORY,</h1>
+            </div>
+            <div class="h2">
+                <h2>Fund Placement & Distribution</h2>
+            </div>
+            <div class="h5">
+                <h5><i>Private Equity, Infrastructure Funds & Hedge Funds</i></h5>
+            </div>
+            <div class="a">
+                <a href="#" style="text-decoration:none">Start Now For Free</a>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <h2>Advisory service</h2>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates debitis<br>
+            pariatur ad porro commodi. Adipisci iste voluptatibus neque excepturi, asperiores<br>
+            aspernatur quos in alias.</p>
+    </div>
+    <div class="service_menu">
+        <div class="A">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <h3 style="font-family: system-ui;">Advisory Trading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                elit.Consectetur voluptates debitis<br>
+                pariatur ad porro commodi.</p>
+        </div>
+        <div class="B">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+            <h3 style="font-family: system-ui;">Advisory ISA Trading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                elit.Consectetur voluptates debitis<br>
+                pariatur ad porro commodi.
+        </div>
+        <div class="C">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <h3 style="font-family: system-ui;">Discretionary Managed Service</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                elit.Consectetur voluptates debitis<br>
+                pariatur ad porro commodi.
+        </div>
+    </div>
+    <div class="solutions">
+        <img src="./pic1.jpg" style="width: 100%; height: 100%; object-fit:cover;">
+        <div class="solutions1">
+            <div>
+                <h1>FRESH INVESTMENT SOLUTIONS!</h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Dolorem obcaecati vel aliquam corrupti dolorum.Unde<br>
+                    quaerat, eveniet dolorum dolores illo libero quam<br>
+                    facilis ex dicta necessitatibus expedita nemo<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Dolorem obcaecati vel aliquam corrupti dolorum.Unde<br>
+                    quaerat, eveniet dolorum dolores illo libero quam<br>
+                    facilis ex dicta necessitatibus expedita nemo
+                </p>
+            </div>
+            <div>
+                <a href="#" style="text-decoration:none">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <h2>Investment Features</h2>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+    </div>
+    <div class="above_row">
+        <div class="left">
+            <div class="content">
+                <div>
+                    <h3>The Right Investments</h3>
+                    <h3 style="color:#F9AB2D; margin-bottom: 2%;">in the Right Advice</h3>
+                </div>
+                <div>
+                    <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                        elit.Consectetur voluptates debitis pariatur ad<br>
+                        porro commodi.</p>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="icon">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Financial Advisors and</h3>
+                    <h3 style="color:#F9AB2D; margin-bottom: 2%;">Service Specialists</h3>
+                </div>
+                <div>
+                    <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                        elit.Consectetur voluptates debitis pariatur ad<br>
+                        porro commodi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="below_row">
+        <div class="left">
+            <div class="content">
+                <div>
+                    <h3>Automated Wealth </h3>
+                    <h3 style="color:#F9AB2D; margin-bottom: 2%;">Management</h3>
+                </div>
+                <div>
+                    <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                        elit.Consectetur voluptates debitis pariatur ad<br>
+                        porro commodi.</p>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="icon">
+                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Advisory Investment</h3>
+                    <h3 style="color:#F9AB2D; margin-bottom: 2%;">Service</h3>
+                </div>
+                <div>
+                    <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                        elit.Consectetur voluptates debitis pariatur ad<br>
+                        porro commodi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="points">
+        <div class="left_points">
+            <div>
+                <h2>Fresh Investment</h2>
+            </div>
+            <div style="display: flex; margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.Consectetur
+                    voluptates voluptates debitis.<br>
+                </p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit adipisicing elit.
+                </p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="right_points">
+            <div>
+                <h2>Learning to Save Money</h2>
+            </div>
+            <div style="display: flex; margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px; color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.Consectetur voluptates voluptates debitis.<br>
+                </p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px; color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px; color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    adipisicing elit.</p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px; color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div style="display: flex;  margin: 1%;">
+                <i class="fa fa-star" style="color: #fff; margin-right: 1%;" aria-hidden="true"></i>
+                <p style="font-size: 13px;color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="info" style="position: relative;">
+        <img src="./pic2.jpg" width="100%; height:100%">
+        <div class="sign_up">
+            <div>
+                <h2>SIGN UP BELOW TO GET NEWS & DEALS!</h2>
+            </div>
+            <div>
+                <h4>Subscribe To Our Mailing List</h4>
+            </div>
+            <div class="submit">
+                <div class="input-icon-sec" style="margin-right: 2%;">
+                    <input type="text" placeholder="Your Name">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                </div>
+                <div class="input-icon-sec" style="margin-right: 2%;">
+                    <input type="text" placeholder="Your E-mail">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <a href="#" style="text-decoration:none">SUBMIT</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="links">
+                <div style="padding: 50px 121px 39px 70px">
+                    <h5 style="margin-bottom: 10%; font-size: 15px;">Quick Links</h5>
+                    <div style="text-decoration: none; font-size: 12px; font-family: system-ui;">
+                        <ul style="list-style-type: none;">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Projects</li>
+                            <li>Our Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="padding: 50px 120px 39px 70px">
+                    <h5 style="margin-bottom: 10%; font-size: 15px;">Investing</h5>
+                    <div style="text-decoration: none; font-size: 12px; font-family: system-ui;">
+                        <ul style="list-style-type: none;">
+                            <li>Investment Products</li>
+                            <li>Account Types</li>
+                            <li>Rollovers & Transfers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="padding: 50px 120px 39px 70px">
+                    <h5 style="margin-bottom: 10%; font-size: 15px;">Advice & Guidance</h5>
+                    <div style="text-decoration: none; font-size: 12px; font-family: system-ui;">
+                        <ul style="list-style-type: none;">
+                            <li>Partner With an Advisor</li>
+                            <li>Investing Goals</li>
+                            <li>Life Events</li>
+                            <li>Investor Education</li>
+                            <li>Calculators & Tools</li>
+                            <li>Tax-Filing Information</li>
+                            <li>Forms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="padding: 50px 120px 39px 70px">
+                    <h5 style="margin-bottom: 10%; font-size: 18px">News & Perspectives</h5>
+                    <div style="text-decoration: none; font-size: 12px; font-family: system-ui;">
+                        <ul style="list-style-type: none;">
+                            <li>News & Views</li>
+                            <li>Markets</li>
+                            <li>Research</li>
+                            <li>Vanguard Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="left" style="color: #fff; padding: 25px 100px 40px 100px;">
+                <div>
+                    <h5 style="font-family: system-ui; margin-bottom: 5%;">CONNECT WITH US</h5>
+                </div>
+                <div>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="middle" style="color: #fff; padding: 30px 220px 0px 140px; border-left: 3px solid black; border-right: 3px solid black;">
+                <div>
+                    <h5 style="font-family: system-ui; margin-bottom: 3%;">CONTACT US</h5>
+                </div>
+                <div style="display: flex;">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <p style="font-size: 10px;margin-left: 7px;margin-right: 15px; ">+91-9182394728</p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p style="font-size: 10px;margin-left: 7px;margin-right: 15px;">rizwanahmed6229@gmail.com</p>
+                </div>
+            </div>
+            <div class="right" style="color: #fff; padding: 30px 148px 0px 10px;">
+                <div>
+                    <h5 style="font-family: system-ui; margin-bottom: 3%;">ADDRESS</h5>
+                </div>
+                <div style="display: flex;">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <p style="font-size: 10px; margin-left: 7px;margin-right: 15px;">Mandi Bazar, Warangal. 506002</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mini-footer">
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+         <p style="font-size: 12px; margin-left:7px">copyright 2022. All Rights Reserved.</p>
+     </div>
+</body>
+
+</html>
